@@ -15,7 +15,7 @@ The coding language chosen for this code challenge is Java, as it was Option 2 i
         - recursive function that reverses a string
         - a recursive function that, given a number n, prints out the first n Fibonacci numbers (Fibonacci numbers are a sequence where each number is the sum of the previous two - 0 1 1 2 3 5 8...)
 
-The initial code provided for this code review has been saved in Section A, with a name recursion.java. There are 48 lines in this code, and the rest of the sections of this README document will detail the constructive feedback I would give the student
+The initial code provided for this code review has been saved in Section A, with a name 'recursion.java'. There are 48 lines in this code, and the rest of the sections of this README document will detail the constructive feedback I would give the student
 
 ---
 
@@ -64,9 +64,9 @@ public static void main(String [] args){
     // ... }
 ```
 
-Notice how each example uses the position of the opening and closing braces differently. Most of the provided code follows example 1, however some aspects of it change to example 2 and example 3 - making reading the code more difficult. It is recommended to stay with a single brace-style, and with this code review - Example 2 will be used.
+Notice how each example uses the position of the opening and closing braces differently. Most of the provided code follows example 1, however some aspects of it change to example 2 and example 3 - making reading the code more difficult. It is recommended to stay with a single brace-style.
 
-I have created a new java file, called 'RecursionRevised.java', which will contain these changes.
+I have created a new java file, called 'RecursionRevised.java', which will contain these changes. The brace-style shown in Example 2 will be used in this program.
 
 ---
 
@@ -139,9 +139,9 @@ On line 10, you also print a String showing the first 10 fibonacci numbers. This
 I would recommend replacing this String with a method call to your fibonacci function. One possible solution is the following:
 
 ```
-11      //create Method and pass and input parameter string 
-12      String reversed = reverse_string(myStr);
-13      System.out.println("The reversed string is: " + reversed); fibonacci(10);
+9      //create Method and pass and input parameter string 
+10      String reversed = reverse_string(myStr);
+11      System.out.println("The reversed string is: " + reversed); fibonacci(10);
 ```
 
 ---
