@@ -173,8 +173,6 @@ The reversed string is: Java is Awesome
 Fibonacci Series of 10 numbers:0 1 1 2 3 5 8 13 21 34
 ```
 
-The code is a fantastic attempt! We only needed to modify a few small things, to get it to run! 
-
 ---
 
 # Next Steps
@@ -202,3 +200,17 @@ Kindly note that all of these proposed solutions have been implemented in a sepe
     7.) Should function() take an Integer as a parameter?
     8.) function() should be recursive, not iterative!
     9.) main() should call the fibonacci function!
+
+---
+
+# Overall Feedback
+
+**Correctness** - This code aimed to reverse a string, and calculate the first 'n' fibonacci numbers in a sequence. Because the fibonacci function was not called in the main() method, and uses iteration instead of recursion, this code is not complete. If the proposed corrections were implemented, I believe this code could be completely correct.
+
+**Efficiency** - This code is efficient, however recursion is generally slower that iteration.
+
+**Style** - The code provided did not have a consistent indentation-style, nor did it have a consistent brace-style. Fixing these would make the code more readible.
+
+**Documentation** - The code could benefit from some more comments and test cases.
+
+Overall, the code is a fantastic attempt! We only needed to modify a few small things, to get it to run! 
