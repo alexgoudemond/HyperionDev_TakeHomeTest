@@ -10,8 +10,7 @@ public class RecursionRevised
  
 		//create Method and pass and input parameter string 
 		String reversed = reverse_string(myStr);
-		System.out.println("The reversed string is: " + reversed + "\nFibonacci Series of 10 numbers:0 1 1 2 3 5 8 13 21 34 ");
-	
+		System.out.println("The reversed string is: " + reversed); fibonacci(10);
 
 	}
  
@@ -19,6 +18,7 @@ public class RecursionRevised
 	//Method take string parameter and check string is empty or not
 	public static String reverse_string(String myStr)
 	{
+		// base case
 		if (myStr.isEmpty())
         {
 		    System.out.println("String in now Empty");
@@ -26,13 +26,13 @@ public class RecursionRevised
 		}
 		//Calling Function Recursively
 		System.out.println("String to be passed in Recursive Function: "+myStr.substring(1));
-		return reverseString(myStr.substring(1)) + myStr.charAt(0);
+		return reverse_string(myStr.substring(1)) + myStr.charAt(0);
     }
 
-	public static <T> void function(T maxNumber) 
+	public static void fibonacci(int maxNumber) 
     {
 		// Set it to the number of elements you want in the Fibonacci Series
-		int maxNumber = 10; 
+		if (maxNumber < 1) { maxNumber = 10; } //default value 
 		int previousNumber = 0;
 		int nextNumber = 1;
 		 
